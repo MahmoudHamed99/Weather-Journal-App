@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weather Journal</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="app">
+            <h2 class="headline">Weather Journal App</h2>
+            <form>
+                <input type='text' id="zip" placeholder='Enter Your City Zipcode'/>
+                <span id="err1" class="err">Please Fill The Input</span>
+                <input type='text' id="feel" placeholder='Enter Your Feeling'/>
+                <span id="err2" class="err">Please Fill The Input</span>
+                <input type='submit' value='Get Weather' id="generate"/>
+            </form>
+            <div class='data'>
+                <ul>
+                    <li>Date: <span id="date"></span></li>
+                    <li>Tempreature: <span id="temp"></span></li>
+                    <li>Feeling: <span id="feelings"></span></li>
+                    <li class='error'><span></span></li>
+                </ul>
+            </div>
+        </div>
+        <script src="js/app.js"></script>
+    </body>
+</html>
